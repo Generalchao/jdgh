@@ -1,0 +1,35 @@
+.whitebg{background-color: #fff;}
+body{background-color: #fff;scrollbar-width: none;-ms-overflow-style: none;}
+.top_bar{height: 44px;position: fixed;z-index: 7;top:0;right: 0;left: 0;background:#fff;display: flex;align-items: center; /*定义body的元素垂直居中*/justify-content: center;/*定义body的里的元素水平居中*/}
+.top_bar:after{content: '';position: absolute;background-color: #E7E7E7;height: 1px;left: 0;bottom: 0;right: 0;-webkit-transform: scaleY(.5);
+transform: scaleY(.5);}
+.logo{width:30px ;position: absolute;left: 12px;top: 7px;}
+.top_img_title{width: 88px;}
+.content_box{padding-top: 44px;padding-bottom: 64px;overflow: hidden;}
+
+/* .van-swipe{overflow: initial;} */
+.my-swipe.van-swipe{padding-top: 14px;width: calc(100vw - 48px);margin-left: 24px;}
+.my-swipe .van-swipe-item{border-radius: 11px;overflow: hidden;font-size: 0;}
+.my-swipe .van-swipe-item img{height:calc(50vw - 24px);}
+
+.van-swipe__indicator.van-swipe__indicator--active{width: 16px;border-radius: 3px;}
+.menu.van-row{padding-top: 24px;}
+.menu.van-row .van-col.van-col--6{width: 20%;text-align: center;}
+.menu.van-row .menu_icon{width: 42px;padding-top: 8px;}
+.menu.van-row .menu_title{font-size: 12px;line-height: 16px;padding-top: 8px;display: block;padding-bottom: 18px;}
+
+.van-tab{flex: initial;padding:0 8px;color: #999;font-size: 16px;}
+.van-tab:first-child{margin-left: 16px;}
+.van-tab.van-tab--active{font-size: 20px;color: #333;}
+.van-tabs__line{width: 20px;height: 6px;}
+
+.hd_item{background-color: #EFF6FF;border-radius: 11px;padding:8px;margin: 8px 24px;display: flex;}
+.hd_item:first-child{margin-top: 20px;}
+.hd_item .cover{width: 140px;height: 100px;border-radius: 10px;box-shadow: 0px 9px 10px rgba(118, 167, 230, 0.2);object-fit: cover;}
+.hd_item .info{padding:0px 4px 0px 12px;width: 100%;}
+.hd_item .title{font-weight: 600;font-size: 18px;line-height: 25px;color: #333;display: block;margin-bottom: 6px;}
+.hd_item .tag{font-weight: 600;font-size: 12px;color: #fff;background-color: #F65656;border-radius: 3px;padding:2px 4px;margin-top: 6px;}
+.hd_item .number{display: block;font-size: 14px;line-height: 20px;color: #333;padding-top: 25px;}
+.hd_item .number font{font-weight: 600;font-size: 12px;line-height: 18px; color: #fff;background-color: #F87474;border-radius: 3px;padding:2px 4px;margin: 0 4px;}
+.empty{width: 100%;text-align: center;padding:48px 0;}
+.empty p{font-size: 14px;color: #999;} 

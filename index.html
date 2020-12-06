@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>嘉定公会</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<!-- 引入样式文件 -->
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/vant@2.10/lib/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- 引入 Vue 和 Vant 的 JS 文件 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vant@2.10/lib/vant.min.js"></script>
+
+	<style>
+</style>
+</head>
+<body>
+	<header class="top_bar">
+		<img class="logo" src="img/logo_gh.png">
+		<img class="top_img_title" src="img/logo_text@2x.png">
+	</header>
+
+	<div class="content_box" id="app">	
+
+		<van-swipe class="my-swipe" :autoplay="5000" indicator-color="white" width="">
+			<van-swipe-item><img src="img/IMG_2591.PNG"></van-swipe-item>
+			<van-swipe-item><img src="img/IMG_2598.PNG"></van-swipe-item>
+			<van-swipe-item><img src="img/IMG_2641.PNG"></van-swipe-item>
+		</van-swipe>
+
+
+		<van-row class="menu">
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_01@2x.png"><span class="menu_title">工会活动</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_02@2x.png"><span class="menu_title">观影活动</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_03@2x.png"><span class="menu_title">个人中心</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_04@2x.png"><span class="menu_title">内购平台</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_05@2x.png"><span class="menu_title">内购会员激活</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_06@2x.png"><span class="menu_title">网上展厅</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_07@2x.png"><span class="menu_title">掌上课堂</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_08@2x.png"><span class="menu_title">工会会员服务</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_09@2x.png"><span class="menu_title">我要维权</span></van-col>
+		  <van-col span="6"><img class="menu_icon" src="img/menu_img_10@2x.png"><span class="menu_title">心理咨询</span></van-col>
+		</van-row>
+
+
+		<van-tabs v-model="active">
+		  <van-tab title="最新活动">
+		  	<div class="hd_item">
+		  		<img class="cover" src="img/jgc.jpeg">
+		  		<div class="info">
+			  		<span class="title">管虎作品-金刚川</span>
+			  		<span class="tag">总工</span>
+			  		<span class="number">剩余<font>30</font>套</span>
+		  		</div>
+		  	</div>
+		  	<div class="hd_item">
+		  		<img class="cover" src="img/yxdhh.jpeg">
+		  		<div class="info">
+			  		<span class="title">野性的呼唤</span>
+			  		<span class="tag">区总</span>
+			  		<span class="number">剩余<font>2</font>套</span>
+		  		</div>
+		  	</div>
+		  	<div class="hd_item">
+		  		<img class="cover" src="img/whwdjx.jpg">
+		  		<div class="info">
+			  		<span class="title">我和我的家乡</span>
+			  		<span class="tag">区总</span>
+			  		<span class="number">剩余<font>2</font>套</span>
+		  		</div>
+		  	</div>
+
+
+
+		  </van-tab>
+		  <van-tab title="历史活动">
+		  	<div class="empty">
+		  		<img src="img/empty.svg">
+		  		<p>暂无历史活动！</p>
+		  	</div>
+
+		  </van-tab>
+		</van-tabs>
+		
+
+
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		var app = new Vue({
+			el: '#app',
+		 	template:'',
+		 	data() {
+			    return {
+			      active: 2,
+			    };
+			  },
+			
+		})
+
+	</script>	
+
+</body>
+</html>
