@@ -53,8 +53,8 @@ body.movie{background: radial-gradient(49.75% 100.74% at 59.42% 55.31%, #564528 
 .ticket_number .title{font-size: 14px;line-height: 20px;color: #999999;padding-right: 14px;}
 .ticket_number .num{font-weight: bold;font-size: 24px;line-height: 26px;color: #333333}
 .notice{padding-top: 520px;}
-.notice_info{background-color: #fff;height: 300px;box-shadow:  0px -8px 16px rgba(0, 0, 0, 0.03);}
-.notice_info .title{font-weight: 600;font-size: 20px;line-height: 28px;position: relative;text-align: center;padding-top: 30px;color: #333;}
+.notice_info{background-color: #fff;box-shadow:  0px -8px 16px rgba(0, 0, 0, 0.03);padding:32px;}
+.notice_info .title{font-weight: 600;font-size: 20px;line-height: 28px;position: relative;text-align: center;color: #333;}
 .notice_info .title:after{position: absolute;content: "";background: #F65656;opacity: 0.5;height: 10px;bottom: 0;left: calc(50% - 54px);width: 104px;}
-
+.notice_info ul.details{padding: 24px 0 0 16px;color: #333;font-size: 15px;line-height: 26px;list-style-type:decimal;}
 
