@@ -36,7 +36,8 @@ transform: scaleY(.5);}
 
 
 /* 影票详情 */
-body.movie{background: radial-gradient(49.75% 100.74% at 59.42% 55.31%, #564528 0%, #492419 100%);height: 100vh;}
+.background{position: fixed;z-index: -2;top: 0;bottom: 0;left: 0;right: 0;background: radial-gradient(49.75% 100.74% at 59.42% 55.31%, #564528 0%, #492419 100%);}
+body.movie{height: 100vh;}
 .top_bar_movie{position: fixed;left: 0;top: 0;right: 0; color: #fff;background-color: transparent;height: 44px;text-align: center;display: flex;align-items: center;}
 .top_bar_movie .back{width: 24px;position: absolute;padding:8px 14px;}
 .top_bar_movie .title{width: 100%;}
