@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>影票详情</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<!-- 引入样式文件 -->
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/vant@2.10/lib/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- 引入 Vue 和 Vant 的 JS 文件 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vant@2.10/lib/vant.min.js"></script>
+	<script type="text/javascript" src="js/qrcode.min.js"></script>
+
+	<style>
+</style>
+</head>
+<body class="movie">
+	<header class="top_bar_movie">
+		<img class="back" src="img/arrow-left@2x.png">
+		<div class="title">影票详情</div>
+	</header>
+
+	<!-- 电影票信息模块 -->
+	<div class="ticket_box">
+		<div class="ticket_info">
+			<img class="ticket_img" src="img/lihuanying.jpg">
+			<div class="ticket_text">
+				<div class="ticket_name">你好，李焕英</div>
+				<div class="address">嘉定区工人文化宫</div>
+				<div class="ticket_date">2021-02-15  周二  19:20</div>
+			</div>
+		</div>
+
+		<div class="qrcode" id="qrcode"></div>
+
+		<div class="ticket_number">
+			<span class="title">取票码</span>
+			<span class="num">4851 8719</span>
+		</div>
+		
+	</div>
+	<!-- 电影票信息模块 -->
+
+	<div class="notice">
+		<div class="notice_info">
+			<div class="title">观影须知</div>
+			
+			
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var qrcode = new QRCode(document.getElementById("qrcode"), {
+			width : 170,
+			height : 170
+		});
+
+		function makeCode () {		
+			qrcode.makeCode('4851 8719');
+		}
+		makeCode();
+
+	
+	</script>	
+
+</body>
+</html>
